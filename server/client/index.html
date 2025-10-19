@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>MrPrint Chat Npl</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="left">
+    <div class="brandRow">
+      <div class="logo">MP</div>
+      <div>
+        <div id="brand">MrPrint Chat Npl</div>
+        <div class="small">Chat público em tempo real</div>
+      </div>
+    </div>
+
+    <div id="login">
+      <input id="username" placeholder="Seu nome" />
+      <button id="enterBtn">Entrar</button>
+    </div>
+
+    <h4>Conectados</h4>
+    <ul id="users"></ul>
+  </div>
+
+  <div id="main">
+    <header>
+      <div id="headerTitle">MrPrint Chat Npl — Sala Pública</div>
+    </header>
+
+    <div id="messages"></div>
+
+    <div id="composer">
+      <input id="text" placeholder="Escreva uma mensagem..." />
+      <button id="sendBtn">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Socket.IO client -->
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
